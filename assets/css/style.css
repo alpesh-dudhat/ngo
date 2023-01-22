@@ -7804,14 +7804,14 @@ footer .footer-logo a img {
   padding-bottom: 0;
 }
 
-.about-img-two {
+/* .about-img-two {
   background-image: url(../img/about/about-image.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   position: relative;
-}
+} */
 
 .about-item.about-item-two {
   max-width: 628px;
