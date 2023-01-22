@@ -109,12 +109,13 @@
 </header>
 <main>
     <!--? Hero Start -->
-    <div class="slider-area2 shadow-sm">
+    <div class="slider-area2 shadow-sm contact-bg">
+        <img src="assets/img/gallery/page-title-bg.jpg" class="w-100" alt="" />
         <div class="slider-height2 d-flex align-items-center">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                        <div class="hero-cap hero-cap2 pt-20 text-center">
+                        <div class="hero-cap hero-cap2 pt-20 text-center text-light">
                             <h2>Contact Us</h2>
                         </div>
                     </div>
@@ -127,17 +128,39 @@
     <section class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <img src="assets/img/account.jpg" alt="helpfriendfoundation" width="350" class="mb-5">
-                </div>
+
                 <div class="col-12">
                     <h2 class="contact-title">Get in Touch</h2>
                 </div>
-                <div class="col-lg-8">
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSeVPXKf8TRMa4T4uavCuEX-druWildiQX8xE8ml4_Ihz5pHIA/viewform?embedded=true"
-                        width="640" height="1037" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                    <form class="form-contact contact_form" netlify method="post" id="contactForm"
+                <div class="col-lg-4 text-center">
+                    <img src="assets/img/account.jpg" alt="helpfriendfoundation" width="350" class="mb-5">
+                </div>
+                <div class="col-lg-4">
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-home"></i></span>
+                        <div class="media-body">
+                            <h3> Anand, Gujarat</h3>
+                            <p>India - 388205</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                        <div class="media-body">
+                            <h3>097148 69211</h3>
+                            <p>Mon to Fri 9am to 6pm</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-email"></i></span>
+                        <div class="media-body">
+                            <h3>helpfriendfoundation@gmail.com</h3>
+                            <p>Send us your query anytime!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+
+                    <form class="form-contact contact_form d-none" netlify method="post" id="contactForm"
                         novalidate="novalidate">
                         <div class="row">
                             <div class="col-12">
@@ -173,30 +196,15 @@
                             <button type="submit" class="button button-contactForm boxed-btn">Send</button>
                         </div>
                     </form>
+                    <form class="form-contact contact_form">
+                        <div class="form-group mt-3">
+                            <a target="_blank"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSeVPXKf8TRMa4T4uavCuEX-druWildiQX8xE8ml4_Ihz5pHIA/viewform"
+                                class="button button-contactForm boxed-btn">Click here for Inquiry</a>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-lg-3 offset-xl-1">
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-home"></i></span>
-                        <div class="media-body">
-                            <h3> Anand, Gujarat</h3>
-                            <p>India - 388205</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                        <div class="media-body">
-                            <h3>097148 69211</h3>
-                            <p>Mon to Fri 9am to 6pm</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-email"></i></span>
-                        <div class="media-body">
-                            <h3>helpfriendfoundation@gmail.com</h3>
-                            <p>Send us your query anytime!</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>

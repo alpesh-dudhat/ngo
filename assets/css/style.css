@@ -7995,3 +7995,33 @@ footer .footer-logo a img {
   transition: 0.5s;
   line-height: 1.4;
 }
+
+.contact-bg {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.contact-bg h2 {
+  color: #fff !important;
+}
+.contact-bg img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.contact-bg:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  left: 0;
+  top: 0;
+  opacity: 0.7;
+  z-index: 0;
+}
