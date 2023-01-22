@@ -1,11 +1,13 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$to = "happy@yopmail.com";
-	$from = $_REQUEST['email'];
-	$name = $_REQUEST['name'];
-	$subject = $_REQUEST['subject'];
-	$number = $_REQUEST['number'];
-	$cmessage = $_REQUEST['message'];
+	$from = $_POST['email'];
+	$name = $_POST['name'];
+	$subject = $_POST['subject'];
+	$number = $_POST['number'];
+	$cmessage = $_POST['message'];
+
+	$txt = "Name = " . $name . "\r\n  Email = " . $email . "\r\n Message =" . $cmessage;
 
 	$headers = "From: $from";
 	$headers = "From: " . $from . "\r\n";
@@ -32,9 +34,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$body .= "</tbody></table>";
 	$body .= "</body></html>";
 
-	$send = mail($to, $subject, $body, $headers);
+	if ($email != NULL) {
+		mail($to, $subject, $txt, $headers);
+	}
+	// $send = mail($to, $subject, $body, $headers);
 	// Redirect to a thank you page
-	echo "Thank You! Your form has been successfully submitted.";
 	header("Location: /index.html");
 	exit;
 }
